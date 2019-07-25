@@ -24,12 +24,12 @@ EntityDescription is only inside [Entity](/components/Entity) components,
 and can not be used more than once for each entity.
 */
 
-export interface Props {
+export interface EntityDescriptionProps {
   cesium: { entity?: Entity };
 }
 
-class EntityDescription extends React.PureComponent<Props> {
-  public constructor(props: Readonly<Props> & { children?: React.ReactNode }) {
+class EntityDescription extends React.PureComponent<EntityDescriptionProps> {
+  public constructor(props: Readonly<EntityDescriptionProps> & { children?: React.ReactNode }) {
     super(props);
     this.update(props);
   }
@@ -38,7 +38,9 @@ class EntityDescription extends React.PureComponent<Props> {
     this.update();
   }
 
-  public componentDidUpdate(prevProps: Readonly<Props> & { children?: React.ReactNode }) {
+  public componentDidUpdate(
+    prevProps: Readonly<EntityDescriptionProps> & { children?: React.ReactNode },
+  ) {
     if (this.props.children !== prevProps.children) {
       this.update();
     }
@@ -48,7 +50,9 @@ class EntityDescription extends React.PureComponent<Props> {
     return null;
   }
 
-  private update(props: Readonly<Props> & { children?: React.ReactNode } = this.props) {
+  private update(
+    props: Readonly<EntityDescriptionProps> & { children?: React.ReactNode } = this.props,
+  ) {
     if (props.cesium && props.cesium.entity && props.children) {
       props.cesium.entity.description = new ConstantProperty(
         renderToStaticMarkup(props.children as React.ReactElement<any>),

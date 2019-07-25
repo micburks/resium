@@ -1,1 +1,1 @@
-export { default } from "./Label";
+export { default, default as Label, LabelCesiumProps, LabelContext, LabelProps } from "./Label";

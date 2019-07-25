@@ -1,5 +1,5 @@
 import Cesium from "cesium";
-import createCesiumComponent from "../core/CesiumComponent";
+import { createCesiumComponent } from "../core/CesiumComponent";
 
 /*
 @summary

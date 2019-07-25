@@ -1,1 +1,7 @@
-export { default } from "./BillboardCollection";
+export {
+  default,
+  default as BillboardCollection,
+  BillboardCollectionCesiumProps,
+  BillboardCollectionContext,
+  BillboardCollectionProps,
+} from "./BillboardCollection";

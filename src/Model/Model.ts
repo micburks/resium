@@ -1,6 +1,6 @@
 import Cesium from "cesium";
 
-import createCesiumElement from "../core/CesiumComponent";
+import { createCesiumComponent } from "../core/CesiumComponent";
 
 export interface ModelCesiumProps {
   basePath?: Cesium.Resource | string;
@@ -85,7 +85,7 @@ const cesiumReadonlyProps: (keyof ModelCesiumReadonlyProps)[] = [
   "url",
 ];
 
-const Model = createCesiumElement<Cesium.Model, ModelProps, ModelContext>({
+const Model = createCesiumComponent<Cesium.Model, ModelProps, ModelContext>({
   name: "Model",
   create(cprops, props) {
     // Workaround: basePath?: Cesium.Resource | string;

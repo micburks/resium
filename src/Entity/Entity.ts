@@ -1,6 +1,6 @@
 import Cesium, { Entity as CesiumEntity } from "cesium";
 
-import createCesiumComponent, { EventkeyMap } from "../core/CesiumComponent";
+import { createCesiumComponent, EventkeyMap } from "../core/CesiumComponent";
 import EventManager, { EventProps } from "../core/EventManager";
 import { BillboardGraphicsCesiumProps } from "../BillboardGraphics/BillboardGraphics";
 import { BoxGraphicsCesiumProps } from "../BoxGraphics/BoxGraphics";

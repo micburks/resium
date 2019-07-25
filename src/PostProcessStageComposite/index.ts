@@ -1,10 +1,15 @@
 export {
   PostProcessStageComposite,
-  AmbientOcclusion,
-  Bloom,
-  BlurStage,
-  DepthOfFieldStage,
-  EdgeDetectionStage,
-  SilhouetteStage,
+  PostProcessStageComposite as default,
+  PostProcessStageCompositeCesiumProps,
+  PostProcessStageCompositeCesiumReadonlyProps,
+  PostProcessStageCompositeContext,
+  PostProcessStageCompositeProps,
 } from "./PostProcessStageComposite";
-export { default } from "./PostProcessStageComposite";
+
+export { AmbientOcclusion } from "./AmbientOcclusion";
+export { Bloom } from "./Bloom";
+export { BlurStage } from "./BlurStage";
+export { DepthOfFieldStage } from "./DepthOfFieldStage";
+export { EdgeDetectionStage } from "./EdgeDetectionStage";
+export { SilhouetteStage } from "./SilhouetteStage";

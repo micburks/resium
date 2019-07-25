@@ -1,1 +1,1 @@
-export { default } from "./Fog";
+export { default, default as Fog, FogCesiumProps, FogContext, FogProps } from "./Fog";

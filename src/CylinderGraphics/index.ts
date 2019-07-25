@@ -1,1 +1,8 @@
-export { default } from "./CylinderGraphics";
+export {
+  default,
+  default as CylinderGraphics,
+  CylinderCesiumEvents,
+  CylinderGraphicsCesiumProps,
+  CylinderGraphicsContext,
+  CylinderGraphicsProps,
+} from "./CylinderGraphics";

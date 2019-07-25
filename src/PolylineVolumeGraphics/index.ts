@@ -1,1 +1,8 @@
-export { default } from "./PolylineVolumeGraphics";
+export {
+  default,
+  default as PolylineVolumeGraphics,
+  PolylineVolumeGraphicsCesiumEvents,
+  PolylineVolumeGraphicsCesiumProps,
+  PolylineVolumeGraphicsContext,
+  PolylineVolumeGraphicsProps,
+} from "./PolylineVolumeGraphics";

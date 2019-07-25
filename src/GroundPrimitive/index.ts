@@ -1,1 +1,8 @@
-export { default } from "./GroundPrimitive";
+export {
+  default,
+  default as GroundPrimitive,
+  GroundPrimitiveCesiumProps,
+  GroundPrimitiveCesiumReadonlyProps,
+  GroundPrimitiveContext,
+  GroundPrimitiveProps,
+} from "./GroundPrimitive";

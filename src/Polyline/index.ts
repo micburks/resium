@@ -1,1 +1,7 @@
-export { default } from "./Polyline";
+export {
+  default,
+  default as Polyline,
+  PolylineCesiumProps,
+  PolylineContext,
+  PolylineProps,
+} from "./Polyline";

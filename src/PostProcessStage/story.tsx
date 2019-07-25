@@ -4,7 +4,7 @@ import { Cartesian3 } from "cesium";
 
 import Viewer from "../Viewer";
 import Entity from "../Entity";
-import * as postProcessStage from "./PostProcessStage";
+import * as postProcessStage from ".";
 import * as postProcessStageComposite from "../PostProcessStageComposite";
 import model from "assets/Cesium_Air.glb";
 

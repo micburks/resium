@@ -1,1 +1,8 @@
-export { default } from "./Globe";
+export {
+  default,
+  default as Globe,
+  GlobeCesiumEvents,
+  GlobeCesiumProps,
+  GlobeContext,
+  GlobeProps,
+} from "./Globe";

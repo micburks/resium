@@ -1,1 +1,8 @@
-export { default } from "./LabelGraphics";
+export {
+  default,
+  default as LabelGraphics,
+  LabelGraphicsCesiumEvents,
+  LabelGraphicsCesiumProps,
+  LabelGraphicsContext,
+  LabelGraphicsProps,
+} from "./LabelGraphics";

@@ -1,1 +1,8 @@
-export { default } from "./GeoJsonDataSource";
+export {
+  default,
+  default as GeoJsonDataSource,
+  GeoJsonDataSourceCesiumEvents,
+  GeoJsonDataSourceCesiumProps,
+  GeoJsonDataSourceContext,
+  GeoJsonDataSourceProps,
+} from "./GeoJsonDataSource";

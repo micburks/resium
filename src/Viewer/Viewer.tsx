@@ -1,7 +1,7 @@
 import React from "react";
 import Cesium, { Viewer as CesiumViewer } from "cesium";
 
-import createCesiumComponent, { EventkeyMap } from "../core/CesiumComponent";
+import { createCesiumComponent, EventkeyMap } from "../core/CesiumComponent";
 import EventManager from "../core/EventManager";
 
 /*

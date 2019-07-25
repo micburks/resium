@@ -2,7 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import { Event } from "cesium";
 
-import createCesiumComponent, { CesiumInsideComponentType } from "./CesiumComponent";
+import { createCesiumComponent, CesiumInsideComponentType } from "./CesiumComponent";
 import { Provider } from "./context";
 
 describe("core/CesiumComponent", () => {

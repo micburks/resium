@@ -1,1 +1,6 @@
-export { default } from "./ScreenSpaceCameraController";
+export {
+  default,
+  default as ScreenSpaceCameraController,
+  ScreenSpaceCameraControllerCesiumProps,
+  ScreenSpaceCameraControllerContext,
+} from "./ScreenSpaceCameraController";

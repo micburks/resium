@@ -1,7 +1,6 @@
 import Cesium from "cesium";
 
-import { createPostProcessStage } from "../core/PostProcessStage";
-import createCesiumComponent from "../core/CesiumComponent";
+import { createCesiumComponent } from "../core/CesiumComponent";
 
 /*
 @summary
@@ -119,66 +118,6 @@ export const PostProcessStage = createCesiumComponent<
   },
   cesiumProps,
   cesiumReadonlyProps,
-});
-
-export const BlackAndWhiteStage = createPostProcessStage<{
-  gradations?: number;
-}>({
-  name: "BlackAndWhiteStage",
-  props: ["gradations"],
-  create() {
-    return (Cesium as any).PostProcessStageLibrary.createBlackAndWhiteStage();
-  },
-});
-
-export const BrightnessStage = createPostProcessStage<{
-  brightness?: number;
-}>({
-  name: "BrightnessStage",
-  props: ["brightness"],
-  create() {
-    return (Cesium as any).PostProcessStageLibrary.createBrightnessStage();
-  },
-});
-
-export const LensFlareStage = createPostProcessStage<{
-  dirtTexture?: any;
-  starTexture?: any;
-  intensity?: number;
-  distortion?: number;
-  ghostDispersal?: number;
-  haloWidth?: number;
-  earthRadius?: number;
-}>({
-  name: "LensFlareStage",
-  props: [
-    "dirtTexture",
-    "starTexture",
-    "intensity",
-    "distortion",
-    "ghostDispersal",
-    "haloWidth",
-    "earthRadius",
-  ],
-  create() {
-    return (Cesium as any).PostProcessStageLibrary.createLensFlareStage();
-  },
-});
-
-export const NightVisionStage = createPostProcessStage<{}>({
-  name: "NightVisionStage",
-  props: [],
-  create() {
-    return (Cesium as any).PostProcessStageLibrary.createNightVisionStage();
-  },
-});
-
-export const Fxaa = createPostProcessStage<{}>({
-  name: "Fxaa",
-  create(props, collection) {
-    return collection.fxaa;
-  },
-  props: [],
 });
 
 export default PostProcessStage;

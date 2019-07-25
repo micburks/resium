@@ -1,6 +1,6 @@
 import React from "react";
 
-import createCesiumComponent from "../core/CesiumComponent";
+import { createCesiumComponent } from "../core/CesiumComponent";
 import Cesium, { CesiumWidget as CesiumCesiumWidget } from "cesium";
 
 /*
