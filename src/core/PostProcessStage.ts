@@ -35,7 +35,7 @@ export const createPostProcessStage = <UniformProps, E extends PostProcessStage 
     PostProcessStageCesiumProps & UniformProps & { stages?: any[] },
     PostProcessStageContext
   >({
-    name,
+    name: opts.name,
     create(cprops, props, context) {
       const ps = opts.create(cprops, (context.scene as any).postProcessStages);
       if (typeof cprops.enabled === "boolean") {

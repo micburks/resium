@@ -14,7 +14,7 @@ export const createCameraOperation = <P>(opts: {
     class CameraOperation extends React.PureComponent<
       CameraOperationProps & { cesium: { camera?: Cesium.Camera } } & P
     > {
-      public static displayName = name;
+      public static displayName = opts.name;
 
       public componentDidMount() {
         if (this.props.cesium.camera) {
