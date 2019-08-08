@@ -1,5 +1,5 @@
 {
-  "name": "resium",
+  "name": "@micburks/resium",
   "version": "1.7.1",
   "description": "React components for Cesium",
   "main": "dist/resium.cjs.js",
